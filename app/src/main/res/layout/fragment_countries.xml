@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="15dp"
+    android:layout_margin="8dp"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/country_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Polska"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/capital_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warszawa"
+            android:textSize="24sp"
+            android:visibility="gone"
+            />
+
+            <TextView
+                android:id="@+id/country_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:text="🇵🇱"
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
